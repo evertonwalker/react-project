@@ -22,3 +22,9 @@ export default function Primeiro() {
   );
 }
 </code>
+
+# Props
+
+Se você passar um parâmetro em um componente entre aspas, ele irá no valor strings: <code>titulo="teste"</code> --> String, mas se você passar entre chaves ele irá no valor real,
+isso é muito útil quando você quiser passar valores números:
+<code>nota={9.3} </code> --> 9.3 Number
