@@ -3,7 +3,7 @@ import './Card.css';
 
 export default(props) => {
 
-    const { titulo } = props;
+    const { titulo, children } = props;
 
     return (
         <div className="Card">
@@ -11,7 +11,7 @@ export default(props) => {
                 { titulo }
             </div>
             <div className="Content">
-                { props.children }
+                { children }
             </div>
         </div>
     )

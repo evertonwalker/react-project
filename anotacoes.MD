@@ -32,6 +32,16 @@ isso é muito útil quando você quiser passar valores números:
 Outro ponto interessante sobre propriedades é que você não pode alterar os valores delas, elas são apenas para leitura!
 caso tente fazer algo do tipo: <code>props.variavel = 'teste'</code>, você vai ver que receberá erro. 
 
+Para criar um componente, e inserir outro component dentro, você pode acessar a propriedade Children desse componente pai para ter acesso ao outro componente.
+
+<code>
+<Card>
+  <OutroComponente/> ----> { props.children }
+</Card>
+
+</code>
+
+
 # React Fragment
 
 Sempre que você quer devolver mais de um elemento adjacentes e não circunda eles com nenhuma div, é preciso usar o React.Fragment, 
