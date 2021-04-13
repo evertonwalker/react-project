@@ -1,18 +1,15 @@
-import React from 'react';
-import './Card.css';
+import React from "react";
+import "./Card.css";
 
-export default(props) => {
+const Card = (props) => {
+  const { titulo, children } = props;
 
-    const { titulo, children } = props;
+  return (
+    <div className="Card">
+      <div className="Title">{titulo}</div>
+      <div className="Content">{children}</div>
+    </div>
+  );
+};
 
-    return (
-        <div className="Card">
-            <div className="Title">
-                { titulo }
-            </div>
-            <div className="Content">
-                { children }
-            </div>
-        </div>
-    )
-}
+export default Card;
