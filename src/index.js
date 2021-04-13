@@ -1,15 +1,10 @@
 import "./index.css"; // Import relativo
 
 import ReactDOM from "react-dom";
-import React from "react";
+import App from './App';
 
-import Primeiro from "./components/basicos/Primeiro";
-import ComParametro from "./components/basicos/ComParametro";
 
 ReactDOM.render(
-  <div>
-    <Primeiro></Primeiro>
-    <ComParametro titulo="Segundo componente" subtitulo="Muito legal" />
-  </div>,
+  <App></App>,
   document.getElementById("root")
 );

@@ -1,6 +1,7 @@
 export default function ComParametro(props) {
   const { titulo, subtitulo } = props;
 
+
   return (
     <div>
       <h2>Titulo: {titulo}</h2>

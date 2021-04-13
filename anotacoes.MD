@@ -28,3 +28,12 @@ export default function Primeiro() {
 Se você passar um parâmetro em um componente entre aspas, ele irá no valor strings: <code>titulo="teste"</code> --> String, mas se você passar entre chaves ele irá no valor real,
 isso é muito útil quando você quiser passar valores números:
 <code>nota={9.3} </code> --> 9.3 Number
+
+Outro ponto interessante sobre propriedades é que você não pode alterar os valores delas, elas são apenas para leitura!
+caso tente fazer algo do tipo: <code>props.variavel = 'teste'</code>, você vai ver que receberá erro. 
+
+# React Fragment
+
+Sempre que você quer devolver mais de um elemento adjacentes e não circunda eles com nenhuma div, é preciso usar o React.Fragment, 
+existe duas formas de chama-lo: <React.Fragment> </React.Fragment> ou <> </>, a diferença entre as duas sintaxes é que, a 2° não te permite passar
+atributos, porém normalmente você n usa atributos em Fragments.
