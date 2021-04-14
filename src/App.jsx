@@ -9,8 +9,10 @@ import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
+import ParOuImpar from "./components/ condicional/ParOuImpa";
 
 import "./App.css";
+import UsuarioInfo from "./components/ condicional/UsuarioInfo";
 
 // Quando se tem o default, vc pode retornar uma função anônima, caso não, precisa exportar uma função nomeada
 const App = () => (
@@ -18,6 +20,11 @@ const App = () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#08 Condicional" color="#982395">
+        <ParOuImpar valor={21}></ParOuImpar>
+        <UsuarioInfo usuario={{ nome: "Walker" }}></UsuarioInfo>
+        <UsuarioInfo></UsuarioInfo>
+      </Card>
       <Card titulo="#07 Repetição produtos" color="#FA5241">
         <TabelaProdutos></TabelaProdutos>
       </Card>

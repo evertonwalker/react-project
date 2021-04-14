@@ -7,7 +7,7 @@ const TabelaProdutos = () => {
   const getLinhasOnTable = () => {
     return produtos.map((produto) => {
       return (
-        <tr key={produto.id} className={produto.id % 2 ? "Par" : "Impar"}>
+        <tr key={produto.id} className={produto.id % 2 ? "Impar" : "Par"}>
           <td> {produto.id}</td>
           <td> {produto.nome}</td>
           <td> {produto.valor}</td>
@@ -20,7 +20,7 @@ const TabelaProdutos = () => {
     <div>
       <table border="1">
         <tbody>
-          <tr>
+          <tr className="Title-table">
             <td>Id</td>
             <td>Nome</td>
             <td>Valor</td>
