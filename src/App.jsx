@@ -6,9 +6,10 @@ import Fragmento from "./components/basicos/Fragment";
 import NumeroAleatorio from "./components/basicos/NumeroAleatorio";
 import Card from "./components/basicos/layout/Card";
 import Familia from "./components/basicos/Familia";
+import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
 
 import "./App.css";
-import FamiliaMembro from "./components/basicos/FamiliaMembro";
 
 // Quando se tem o default, vc pode retornar uma função anônima, caso não, precisa exportar uma função nomeada
 const App = () => (
@@ -16,6 +17,9 @@ const App = () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#06 Repetição" color="#FF4C65">
+        <ListaAlunos></ListaAlunos>
+      </Card>
       <Card titulo="#05 Componente pai e filho" color="#1F91">
         <Familia lastName="Son">
           <FamiliaMembro name="Walker"></FamiliaMembro>
