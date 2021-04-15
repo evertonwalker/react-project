@@ -1,17 +1,18 @@
 import React from "react";
-import ComponentIf from "./If";
+import If from "./If";
 
 const UsuarioInfo = (props) => {
-  const { usuario } = props;
+ 
+  const { usuario } = props ;
 
-  const verifyUser = usuario && usuario.nome;
-
-  console.log(verifyUser);
   return (
     <div>
-      <ComponentIf test={verifyUser}>
-        Seja bem vindo <strong> {usuario.nome}</strong>!
-      </ComponentIf>
+      <If test={!!usuario}>
+        Seja bem vindo <strong> {usuario?.nome}</strong>!
+      </If>
+      <If test={!usuario}>
+        Seja bem vindo <strong> Amigão!</strong>!
+      </If>
     </div>
   );
 };

@@ -1,5 +1,5 @@
-const ComponentIf = (props) => {
-  console.log(props);
+const If = (props) => {
+
   if (props.test) {
     return props.children;
   } else {
@@ -7,4 +7,4 @@ const ComponentIf = (props) => {
   }
 };
 
-export default ComponentIf;
+export default If;
