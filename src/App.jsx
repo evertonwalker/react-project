@@ -22,7 +22,8 @@ const App = () => (
     <div className="Cards">
       <Card titulo="#08 Condicional" color="#982395">
         <ParOuImpar valor={21}></ParOuImpar>
-        <UsuarioInfo usuario={{ nome: "Walker" }}/>
+        <UsuarioInfo usuario={{ nome: "Walker" }} />
+        <UsuarioInfo usuario={{}}></UsuarioInfo>
         <UsuarioInfo></UsuarioInfo>
       </Card>
       <Card titulo="#07 Repetição produtos" color="#FA5241">
