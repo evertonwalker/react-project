@@ -13,6 +13,8 @@ import ParOuImpar from "./components/ condicional/ParOuImpa";
 
 import "./App.css";
 import UsuarioInfo from "./components/ condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
 
 // Quando se tem o default, vc pode retornar uma função anônima, caso não, precisa exportar uma função nomeada
 const App = () => (
@@ -20,6 +22,14 @@ const App = () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#10 Comunicação indireta" color="#59323C">
+        <IndiretaPai></IndiretaPai>
+      </Card>
+      <Card titulo="#09 Comunicação direta" color="#542395">
+        {/* Comunição direta é simplesmente o fato do component pai, passar dados
+          para o filho */}
+        <DiretaPai></DiretaPai>
+      </Card>
       <Card titulo="#08 Condicional" color="#982395">
         <ParOuImpar valor={21}></ParOuImpar>
         <UsuarioInfo usuario={{ nome: "Walker" }} />

@@ -3,9 +3,9 @@ const DiretaFilho = (props) => {
 
   return (
     <div>
-      <div>{texto}</div>
-      <div>{numero}</div>
-      <div>{bool}</div>
+      <div>Texto: {texto}</div>
+      <div> Número: {numero}</div>
+      <div> Booleano: {bool ? "Verdadeiro" : "Falso "}</div>
     </div>
   );
 };
