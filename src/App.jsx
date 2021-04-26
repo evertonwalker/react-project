@@ -15,6 +15,7 @@ import "./App.css";
 import UsuarioInfo from "./components/ condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import Input from "./components/formulario/Input";
 
 // Quando se tem o default, vc pode retornar uma função anônima, caso não, precisa exportar uma função nomeada
 const App = () => (
@@ -22,6 +23,9 @@ const App = () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#11 Componente controlado (Input)" color="#E45F56">
+        <Input></Input>
+      </Card>
       <Card titulo="#10 Comunicação indireta" color="#59323C">
         <IndiretaPai></IndiretaPai>
       </Card>
