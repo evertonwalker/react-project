@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import IndiretaFilho from "./IndiretaFilho";
 
 const IndiretaPai = (props) => {
-  let nome, idade, nerd;
+  const [nome, setNome] = useState("?");
+  const [idade, setIdade] = useState(0);
+  const [nerd, setNerd] = useState(false);
 
   function fornercerInformacoes(nomeChild, idadeChild, nerdChild) {
-    console.log(nome, idade, nerd);
+    setNome(nomeChild);
+    setIdade(idadeChild);
+    setNerd(nerdChild);
   }
 
   return (
