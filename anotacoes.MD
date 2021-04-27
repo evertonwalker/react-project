@@ -30,7 +30,7 @@ isso é muito útil quando você quiser passar valores números:
 <code>nota={9.3} </code> --> 9.3 Number
 
 Outro ponto interessante sobre propriedades é que você não pode alterar os valores delas, elas são apenas para leitura!
-caso tente fazer algo do tipo: <code>props.variavel = 'teste'</code>, você vai ver que receberá erro. 
+caso tente fazer algo do tipo: <code>props.variavel = 'teste'</code>, você vai ver que receberá erro.
 
 Para criar um componente, e inserir outro component dentro, você pode acessar a propriedade Children desse componente pai para ter acesso ao outro componente.
 
@@ -41,9 +41,13 @@ Para criar um componente, e inserir outro component dentro, você pode acessar a
 
 </code>
 
-
 # React Fragment
 
-Sempre que você quer devolver mais de um elemento adjacentes e não circunda eles com nenhuma div, é preciso usar o React.Fragment, 
+Sempre que você quer devolver mais de um elemento adjacentes e não circunda eles com nenhuma div, é preciso usar o React.Fragment,
 existe duas formas de chama-lo: <React.Fragment> </React.Fragment> ou <> </>, a diferença entre as duas sintaxes é que, a 2° não te permite passar
 atributos, porém normalmente você n usa atributos em Fragments.
+
+# Arrow function e contexto lesxico
+
+Quando você usa uma arrow function, ela sempre vai olhar pra o contexto this da classe que está inserida, fazendo assim, ela consegue acessar os atributos
+ou métodos que estejam relacionados a classe na qual ela foi declarada.
